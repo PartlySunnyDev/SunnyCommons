@@ -65,3 +65,7 @@ processResources {
         expand props
     }
 }
+
+kotlin {
+    jvmToolchain(17)
+}
