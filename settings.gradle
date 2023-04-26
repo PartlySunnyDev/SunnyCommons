@@ -1,0 +1,4 @@
+rootProject.name = 'SunnyCommons'
+include 'Commons'
+include 'Paper'
+

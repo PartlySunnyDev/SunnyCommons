@@ -1,0 +1,6 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.partlysunny.sunnui'
+version = '1.0-RELEASE'

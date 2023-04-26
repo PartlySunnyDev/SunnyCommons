@@ -1,0 +1,4 @@
+name: Paper
+version: '${version}'
+main: me.partlysunny.paper.Paper
+api-version: 1.19
