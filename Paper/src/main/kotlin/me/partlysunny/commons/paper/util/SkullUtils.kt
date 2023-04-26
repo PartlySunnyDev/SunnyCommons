@@ -6,8 +6,8 @@ import com.google.gson.JsonParser
 import com.mojang.authlib.GameProfile
 import com.mojang.authlib.properties.Property
 import me.partlysunny.commons.CommonUtils
-import me.partlysunny.commons.reflection.JavaAccessor
 import me.partlysunny.commons.paper.util.ItemUtils.getAllVersionStack
+import me.partlysunny.commons.reflection.JavaAccessor
 import org.bukkit.inventory.ItemStack
 import org.bukkit.inventory.meta.SkullMeta
 import java.util.*

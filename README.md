@@ -1,24 +1,31 @@
 # SunnyCommons
+
 [![](https://jitpack.io/v/PartlySunnyDev/SunnyCommons.svg)](https://jitpack.io/#PartlySunnyDev/SunnyCommons)
 ![](https://img.shields.io/github/languages/top/PartlySunnyDev/SunnyCommons)
 ![](https://img.shields.io/github/v/release/PartlySunnyDev/SunnyCommons)
 ![](https://img.shields.io/github/stars/PartlySunnyDev/SunnyCommons?style=social)
 
 ## All in one library for developing plugins and mods
+
 Contains many useful classes and utilities for developing plugins and mods. Also contains libraries
+
 - Commandeer https://github.com/PartlySunnyDev/Commandeer
 - Configurate https://github.com/PartlySunnyDev/Configurate
 - Checkify https://github.com/PartlySunnyDev/Checkify
 
 ### Features
+
 - [x] Many useful classes and utilities
 - [x] Builders and reflection utils
 - [x] Libraries to simplify development
 - [x] Easy to use
 
 ### Setup
+
 1. Add the jitpack repository to your pom.xml
+
 ```xml
+
 <repositories>
     <repository>
         <id>jitpack.io</id>
@@ -28,7 +35,9 @@ Contains many useful classes and utilities for developing plugins and mods. Also
 ```
 
 2. Add the dependency to your pom.xml
+
 ```xml
+
 <dependencies>
     <dependency>
         <groupId>com.github.PartlySunnyDev</groupId>
@@ -39,7 +48,9 @@ Contains many useful classes and utilities for developing plugins and mods. Also
 ```
 
 3. Shade the dependency into your plugin
+
 ```xml
+
 <build>
     <plugins>
         <plugin>
