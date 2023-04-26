@@ -1,4 +1,4 @@
-package me.partlysunny.paper.util.classes
+package me.partlysunny.commons.paper.util.classes
 
 import com.google.common.base.Preconditions
 import org.bukkit.entity.LivingEntity

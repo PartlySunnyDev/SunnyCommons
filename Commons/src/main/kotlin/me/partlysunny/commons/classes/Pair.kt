@@ -1,4 +1,4 @@
-package me.partlysunny.commons.util.classes
+package me.partlysunny.commons.classes
 
 class Pair<A, B>(private var a: A, private var b: B) {
     fun a(): A? {

@@ -1,4 +1,4 @@
-package me.partlysunny.paper.util
+package me.partlysunny.commons.paper.util
 
 import org.bukkit.Bukkit
 import org.bukkit.GameMode

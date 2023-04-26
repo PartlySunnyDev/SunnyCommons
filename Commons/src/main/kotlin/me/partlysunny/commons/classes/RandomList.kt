@@ -1,4 +1,4 @@
-package me.partlysunny.commons.util.classes
+package me.partlysunny.commons.classes
 
 import java.util.*
 import java.util.function.Predicate

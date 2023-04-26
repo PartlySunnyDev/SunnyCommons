@@ -1,4 +1,4 @@
-package me.partlysunny.paper.util
+package me.partlysunny.commons.paper.util
 
 import net.kyori.adventure.text.Component
 import org.bukkit.Material

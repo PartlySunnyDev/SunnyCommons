@@ -1,4 +1,4 @@
-package me.partlysunny.paper
+package me.partlysunny.commons.paper
 
 class SunnyUtilsCore(val plugin: SunnyPlugin) {
 

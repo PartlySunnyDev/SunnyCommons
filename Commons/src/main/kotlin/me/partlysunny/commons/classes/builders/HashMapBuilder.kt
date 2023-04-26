@@ -1,4 +1,4 @@
-package me.partlysunny.commons.util.classes.builders
+package me.partlysunny.commons.classes.builders
 
 class HashMapBuilder<K, V> {
     private val internal = HashMap<K, V>()

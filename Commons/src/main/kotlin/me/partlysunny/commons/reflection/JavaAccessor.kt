@@ -1,4 +1,4 @@
-package me.partlysunny.commons.util.reflection
+package me.partlysunny.commons.reflection
 
 import sun.misc.Unsafe
 import java.lang.invoke.MethodHandle

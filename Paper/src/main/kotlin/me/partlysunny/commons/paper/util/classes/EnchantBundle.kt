@@ -1,6 +1,6 @@
-package me.partlysunny.paper.util.classes
+package me.partlysunny.commons.paper.util.classes
 
-import me.partlysunny.commons.util.classes.builders.HashMapBuilder
+import me.partlysunny.commons.classes.builders.HashMapBuilder
 import org.bukkit.enchantments.Enchantment
 
 enum class EnchantBundle(private val bundle: HashMap<Enchantment, Int>) {

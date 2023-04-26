@@ -1,6 +1,6 @@
-package me.partlysunny.paper.util
+package me.partlysunny.commons.paper.util
 
-import me.partlysunny.paper.SunnyUtilsCore
+import me.partlysunny.commons.paper.SunnyUtilsCore
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 import org.bukkit.Sound

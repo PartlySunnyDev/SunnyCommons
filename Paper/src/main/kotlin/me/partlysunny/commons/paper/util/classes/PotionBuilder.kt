@@ -1,4 +1,4 @@
-package me.partlysunny.paper.util.classes
+package me.partlysunny.commons.paper.util.classes
 
 import net.kyori.adventure.text.Component
 import org.bukkit.Color

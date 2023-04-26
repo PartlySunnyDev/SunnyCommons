@@ -1,4 +1,4 @@
-package me.partlysunny.commons.util
+package me.partlysunny.commons
 
 interface ICommons {
 

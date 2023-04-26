@@ -1,4 +1,4 @@
-package me.partlysunny.paper
+package me.partlysunny.commons.paper
 
 import me.partlysunny.commandeer.CommandManager
 import me.partlysunny.configurate.Configurate

@@ -1,4 +1,4 @@
-package me.partlysunny.paper
+package me.partlysunny.commons.paper
 
 import org.bukkit.plugin.java.JavaPlugin
 import java.util.logging.Level

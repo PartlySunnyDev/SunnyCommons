@@ -1,4 +1,4 @@
-package me.partlysunny.commons.util.reflection
+package me.partlysunny.commons.reflection
 
 /**
  * NOT BY ME!!! [https://gist.github.com/Lauriichan/294c64b63067dcb6a9a8658f2d040256](https://gist.github.com/Lauriichan/294c64b63067dcb6a9a8658f2d040256)
