@@ -22,6 +22,7 @@ abstract class SunnyPlugin(protected val pluginName: String) : JavaPlugin() {
         //Register stuff
         internalRegisterCommands()
         internalRegisterListeners()
+        internalRegisterConfigurations()
         reload()
         internalRegisterGuis()
         ConsoleLogger.console("Enabled $pluginName!")
