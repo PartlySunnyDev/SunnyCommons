@@ -1,9 +1,14 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
 group = 'me.partlysunny.sunnui'
 version = '1.0-RELEASE'
+
+dependencies {
+    api 'com.github.PartlySunnyDev:Checkify:1.0'
+    api 'com.github.PartlySunnyDev:Commandeer:1.0.1'
+}
 
 def targetJavaVersion = 17
 java {

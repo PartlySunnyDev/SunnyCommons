@@ -29,9 +29,6 @@ allprojects {
 
     dependencies {
         implementation "org.jetbrains.kotlin:kotlin-stdlib"
-        api 'com.github.PartlySunnyDev:Configurate:1.0'
-        api 'com.github.PartlySunnyDev:Checkify:1.0'
-        api 'com.github.PartlySunnyDev:Commandeer:1.0.1'
         testImplementation platform('org.junit:junit-bom:5.9.1')
         testImplementation 'org.junit.jupiter:junit-jupiter'
     }
