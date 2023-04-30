@@ -47,7 +47,7 @@ class ItemBuilder {
     }
 
     fun name(name: String): ItemBuilder {
-        meta.displayName(Component.text(name!!))
+        meta.displayName(Component.text(name))
         return this
     }
 
@@ -62,23 +62,19 @@ class ItemBuilder {
             var oldLore = meta.lore()
             if (oldLore == null) oldLore = listOf()
             oldLore.addAll(lore.stream().map { content: String ->
-                Component.text(
-                    content!!
-                )
+                Component.text(content)
             }.toList())
             meta.lore(oldLore)
         } else {
             meta.lore(lore.stream().map { content: String ->
-                Component.text(
-                    content!!
-                )
+                Component.text(content)
             }.toList())
         }
         return this
     }
 
     fun loreString(vararg lore: String): ItemBuilder {
-        return loreString(Arrays.asList(*lore), false)
+        return loreString(listOf(*lore), false)
     }
 
     @JvmOverloads
