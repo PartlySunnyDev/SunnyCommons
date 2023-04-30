@@ -12,6 +12,10 @@ class HashMapBuilder<K, V> {
     }
 
     companion object {
+        fun <A, B> builder(): HashMapBuilder<A, B> {
+            return HashMapBuilder()
+        }
+
         fun <A, B> builder(a: Class<A>?, b: Class<B>?): HashMapBuilder<A, B> {
             return HashMapBuilder()
         }
