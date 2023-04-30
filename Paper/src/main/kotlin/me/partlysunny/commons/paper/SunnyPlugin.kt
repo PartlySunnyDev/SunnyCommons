@@ -1,10 +1,11 @@
 package me.partlysunny.commons.paper
 
 import me.partlysunny.commandeer.CommandManager
+import me.partlysunny.commons.ICommons
 import me.partlysunny.configurate.Configurate
 import org.bukkit.plugin.java.JavaPlugin
 
-abstract class SunnyPlugin(protected val pluginName: String) : JavaPlugin() {
+abstract class SunnyPlugin(protected val pluginName: String) : JavaPlugin(), ICommons {
 
     private var commandManager: CommandManager? = null;
 
@@ -17,6 +18,7 @@ abstract class SunnyPlugin(protected val pluginName: String) : JavaPlugin() {
     }
 
     override fun onEnable() {
+        ICommons.INSTANCE = this
         ConsoleLogger.console("Loading $pluginName...")
 
         //Register stuff
@@ -54,5 +56,9 @@ abstract class SunnyPlugin(protected val pluginName: String) : JavaPlugin() {
     abstract fun registerCommands(commandManager: CommandManager);
     abstract fun registerGuis();
     abstract fun registerConfigurations();
+
+    override fun pluginClass(): Class<Any> {
+        return this.javaClass
+    }
 
 }
