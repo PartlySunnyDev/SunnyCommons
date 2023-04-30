@@ -1,25 +1,9 @@
 package me.partlysunny.commons.classes
 
-class Pair<A, B>(private var a: A, private var b: B) {
-    fun a(): A? {
-        return a
-    }
-
-    fun setA(a: A) {
-        this.a = a
-    }
-
-    fun b(): B? {
-        return b
-    }
-
-    fun setB(b: B) {
-        this.b = b
-    }
-
+class Pair<A, B>(var a: A, var b: B) {
     fun flushNulls(repA: A, repB: B) {
-        if (a() == null) setA(repA)
-        if (b() == null) setB(repB)
+        if (a == null) a = repA
+        if (b == null) b = repB
     }
 
     override fun equals(other: Any?): Boolean {
