@@ -6,7 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin
 
 class NMSManager(private val plugin: JavaPlugin) {
 
-    private lateinit var playerHandler: PlayerHandler;
+    private lateinit var playerHandler: PlayerHandler
 
     private fun load() {
         playerHandler = loadModuleHandler(PlayerHandler::class.java) ?: throw IllegalStateException("No PlayerHandler found for this version of Minecraft");
@@ -28,6 +28,10 @@ class NMSManager(private val plugin: JavaPlugin) {
 
     init {
         load()
+    }
+
+    fun getPlayerHandler(): PlayerHandler {
+        return playerHandler
     }
 
 }
