@@ -189,6 +189,14 @@ class ItemBuilder {
         return this
     }
 
+    fun enchant(enchantBundle: EnchantBundle): ItemBuilder {
+        val bundle = enchantBundle.bundle()
+        bundle.forEach {
+            meta.addEnchant(it.key, it.value, true)
+        }
+        return this
+    }
+
     fun clearEnchants(): ItemBuilder {
         meta.enchants.keys.forEach(Consumer { ench: Enchantment? ->
             meta.removeEnchant(

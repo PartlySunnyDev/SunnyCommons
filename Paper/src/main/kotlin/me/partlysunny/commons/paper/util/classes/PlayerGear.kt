@@ -29,11 +29,7 @@ class PlayerGear private constructor() {
     }
 
     class Builder {
-        private val internal: PlayerGear
-
-        init {
-            internal = PlayerGear()
-        }
+        private val internal: PlayerGear = PlayerGear()
 
         fun setOffHand(i: ItemStack?): Builder {
             internal.offHand = i
