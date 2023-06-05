@@ -1,0 +1,17 @@
+# Dependabot version updates
+# Uses gradle, runs on all app directories
+
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/Paper" # Paper Utils
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "gradle"
+    directory: "/Commons" # Common Utils
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "gradle"
+    directory: "/" # Root Dependencies
+    schedule:
+      interval: "weekly"
