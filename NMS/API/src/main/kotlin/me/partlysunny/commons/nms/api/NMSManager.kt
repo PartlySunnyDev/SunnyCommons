@@ -16,7 +16,7 @@ class NMSManager(private val plugin: JavaPlugin) {
         val nmsVersion = VersionUtils.nmsVersion
         val nmsModulePackage = "me.partlysunny.commons.nms.v$nmsVersion"
         val handlerName = handlerClass.simpleName
-        val handlerClassName = "$nmsModulePackage.$handlerName"
+        val handlerClassName = "${nmsModulePackage}.${handlerName}_${nmsVersion}"
         val versionSpecificHandlerClass = Class.forName(handlerClassName)
         return try {
             val newInstance = versionSpecificHandlerClass.getDeclaredConstructor(JavaPlugin::class.java).newInstance(plugin)
