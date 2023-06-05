@@ -9,28 +9,33 @@ abstract class SunnyPlugin(protected val pluginName: String) : JavaPlugin(), ICo
 
     private var commandManager: CommandManager? = null;
 
-    protected fun reload() {
+    fun reload() {
         Configurate.instance().configManager().loadAll();
     }
 
     override fun onLoad() {
+        ConsoleLogger.console("Loading $pluginName...")
         SunnyUtilsCore.init(this)
+        internalRegisterCommands()
+        internalRegisterConfigurations()
+        ConsoleLogger.console("Loaded $pluginName!")
     }
 
     override fun onEnable() {
         ICommons.INSTANCE = this
-        ConsoleLogger.console("Loading $pluginName...")
+        preEnable()
+        ConsoleLogger.console("Enabling $pluginName...")
 
         //Register stuff
-        internalRegisterCommands()
         internalRegisterListeners()
-        internalRegisterConfigurations()
         reload()
         internalRegisterGuis()
         ConsoleLogger.console("Enabled $pluginName!")
+        postEnable()
     }
 
     override fun onDisable() {
+        disable()
         ConsoleLogger.console("Disabling $pluginName...")
     }
 
@@ -50,6 +55,15 @@ abstract class SunnyPlugin(protected val pluginName: String) : JavaPlugin(), ICo
     private fun internalRegisterConfigurations() {
         Configurate.initialize(this)
         registerConfigurations()
+    }
+
+    protected fun preEnable() {
+    }
+
+    protected fun postEnable() {
+    }
+
+    protected fun disable() {
     }
 
     abstract fun registerListeners();
